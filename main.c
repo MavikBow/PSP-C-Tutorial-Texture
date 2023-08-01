@@ -1,4 +1,7 @@
-#include "callbacks.h"
+#include "common/callbacks.h"
+
+#define STB_IMAGE_IMPLEMENTATION
+#include "common/stb_image.h"
 
 #define GUGL_IMPLEMENTATION
 #include "gu2gl.h"
@@ -66,7 +69,6 @@ int main(){
         guglStartFrame(list, GL_FALSE);
 
         glDisable(GL_DEPTH_TEST);
-        glDisable(GL_TEXTURE_2D);
 
         glClearColor(0xFF000000);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
