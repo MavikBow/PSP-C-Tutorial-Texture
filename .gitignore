@@ -1,0 +1,2 @@
+build/*
+!build/EBOOT.PBP
